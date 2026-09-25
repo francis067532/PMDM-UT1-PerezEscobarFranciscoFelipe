@@ -14,7 +14,7 @@
         android:layout_width="96dp"
         android:layout_height="96dp"
         android:contentDescription="@string/app_name"
-        android:src="@drawable/ic_smartphone"
+        android:src="@drawable/android"
         app:layout_constraintBottom_toTopOf="@id/textTitulo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -27,32 +27,41 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/titulo"
-        android:textSize="24sp"
+        android:textColorLink="#0B2164"
+        android:textColor="#0B2164"
+        android:textSize="32sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageLogo" />
+        app:layout_constraintTop_toBottomOf="@id/imageLogo"
+        tools:text="App de pruebas" />
 
     <TextView
         android:id="@+id/textSubtitulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="28dp"
         android:text="@string/subtitulo"
-        android:textSize="16sp"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorLink="#CC0000"
+        android:textSize="22sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textTitulo" />
+        app:layout_constraintTop_toBottomOf="@id/textTitulo"
+        tools:text="Francisco Felipe Pérez Escobar" />
 
     <TextView
         android:id="@+id/textDescripcion"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="36dp"
         android:gravity="center"
         android:text="@string/descripcion"
+        android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textSubtitulo" />
+        app:layout_constraintTop_toBottomOf="@id/textSubtitulo"
+        tools:text="Esto es el proyecto base para realizar una aplicación en android, para realizar una prueba" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
